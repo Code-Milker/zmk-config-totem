@@ -83,10 +83,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp X       &kp W       &kp M        &kp G        &kp Q        &none    &kp Z        &kp K        &kp J       &kp B
-       &mt LGUI S  &mt LALT N  &mt LCTRL T  &mt LSHFT H  &none        &none    &mt RSHFT A  &mt RCTRL E  &mt RALT I  &mt RGUI C
-&none  &kp V       &kp P       &kp L        &kp D        &none        &none    &kp U        &kp O        &kp Y       &kp F       &none
-                               &kp DEL      &lt 2 ESC    &kp SPACE    &kp RET  &lt 1 TAB    &kp R
+       &kp Q       &kp W       &kp F        &kp P        &kp G        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
+       &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D        &kp H    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
+&kp Q  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp K    &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
+                               &kp DEL      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
             >;
         };
 
@@ -109,9 +109,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp N5        &kp NUMBER_6  &kp N7        &kp N8        &none    &none  &kp LS(HOME)    &none          &none         &kp LS(END)
-       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none    &none  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT
-&none  &none         &none         &kp N0        &kp N9        &none    &none  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END      &none
+       &kp N5        &kp NUMBER_6  &kp N7        &kp N8        &none    &none  &kp LS(HOME)    &none           &none         &kp RS(END)
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&none  &none         &none         &kp N0        &kp N9        &none    &none  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
                                    &none         &none         &none    &none  &none           &none
             >;
         };
@@ -135,10 +135,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none      &kp STAR     &kp EXCL      &kp PLUS   &kp TILDE
-        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none      &kp CARET    &kp PERIOD    &kp MINUS  &kp DOLLAR
-&trans  &kp GRAVE         &kp HASH           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none      &kp PERCENT  &kp QUESTION  &kp EQUAL  &kp BSLH    &none
-                                             &none                 &none                  &none    &kp SLASH  &kp COLON    &kp AT
+        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
+        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
+&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
+                                  &trans     &gif      &mo 3        &trans        &kp C_PP        &trans
+            >;
+        };
+
+        adjust_layer {
+            label = "ADJ";
+            bindings = <
+        &sys_reset   &none  &none   &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &none  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &none  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
