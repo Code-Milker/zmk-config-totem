@@ -135,10 +135,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp RA(U)   &kp SQT     &kp TILDE
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &none         &kp CARET     &kp PERIOD  &kp RA(N4)  &kp DOLLAR
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp BSLH    &trans
-                                  &trans     &gif      &mo 0        &kp SLASH     &kp COLON     &trans
+        &kp EXCL     &kp AT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none      &kp STAR     &kp EXCL      &kp PLUS   &kp TILDE
+        &kp RA(A)    &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none      &kp CARET    &kp PERIOD    &kp MINUS  &kp DOLLAR
+&trans  &kp RA(F18)  &kp RA(F19)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none      &kp PERCENT  &kp QUESTION  &kp EQUAL  &kp BSLH    &none
+                                  &none                 &none                  &none    &kp SLASH  &kp COLON    &none
             >;
         };
 
