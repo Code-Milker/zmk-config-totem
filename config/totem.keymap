@@ -84,7 +84,7 @@
 
             bindings = <
        &kp X       &kp W       &kp M        &kp G        &kp Q        &none    &kp Z        &kp K        &kp J       &kp B
-       &mt LGUI S  &mt LALT N  &mt LCTRL T  &mt LSHFT H  &none        &none    &mt RSHFT A  &mt RCTRL E  &mt RALT I  &mt RGUI C
+       &mt LGUI S  &mt LALT C  &mt LCTRL N  &mt LSHFT T  &none        &none    &mt RSHFT A  &mt RCTRL E  &mt RALT I  &mt RGUI H
 &none  &kp V       &kp P       &kp L        &kp D        &none        &none    &kp U        &kp O        &kp Y       &kp F       &none
                                &kp DEL      &lt 2 ESC    &kp SPACE    &kp RET  &lt 1 TAB    &kp R
             >;
