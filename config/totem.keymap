@@ -84,7 +84,7 @@
 
             bindings = <
        &kp X       &kp W       &kp M        &kp G        &kp Q        &none    &kp Z        &kp K        &kp J       &kp B
-       &mt LGUI S  &mt LALT C  &mt LCTRL S  &mt LSHFT T  &none        &none    &mt RSHFT A  &mt RCTRL E  &mt RALT I  &mt RGUI H
+       &mt LGUI S  &mt LALT N  &mt LCTRL T  &mt LSHFT H  &none        &none    &mt RSHFT A  &mt RCTRL E  &mt RALT I  &mt RGUI C
 &none  &kp V       &kp P       &kp L        &kp D        &none        &none    &kp U        &kp O        &kp Y       &kp F       &none
                                &kp DEL      &lt 2 ESC    &kp SPACE    &kp RET  &lt 1 TAB    &kp R
             >;
@@ -137,8 +137,8 @@
             bindings = <
         &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &none      &kp STAR     &kp EXCL      &kp PLUS   &kp TILDE
         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none    &none      &kp CARET    &kp PERIOD    &kp MINUS  &kp DOLLAR
-&trans  &kp GRAVE         &kp AT             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none      &kp PERCENT  &kp QUESTION  &kp EQUAL  &kp BSLH    &none
-                                             &none                 &none                  &none    &kp SLASH  &kp COLON    &none
+&trans  &kp GRAVE         &kp HASH           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none    &none      &kp PERCENT  &kp QUESTION  &kp EQUAL  &kp BSLH    &none
+                                             &none                 &none                  &none    &kp SLASH  &kp COLON    &kp AT
             >;
         };
 
